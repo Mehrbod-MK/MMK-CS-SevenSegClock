@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label_SEG_H1_A = new System.Windows.Forms.Label();
             this.label_SEG_H1_B = new System.Windows.Forms.Label();
             this.label_SEG_H1_C = new System.Windows.Forms.Label();
@@ -74,6 +75,7 @@
             this.label_SEG_DOT_HM_2 = new System.Windows.Forms.Label();
             this.label_SEG_DOT_MS_2 = new System.Windows.Forms.Label();
             this.label_SEG_DOT_MS_1 = new System.Windows.Forms.Label();
+            this.timer_Update = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label_SEG_H1_A
@@ -444,6 +446,10 @@
             this.label_SEG_DOT_MS_1.Size = new System.Drawing.Size(10, 10);
             this.label_SEG_DOT_MS_1.TabIndex = 44;
             // 
+            // timer_Update
+            // 
+            this.timer_Update.Tick += new System.EventHandler(this.timer_Update_Tick);
+            // 
             // CS_SevenSegClock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,6 +561,7 @@
         private System.Windows.Forms.Label label_SEG_DOT_HM_2;
         private System.Windows.Forms.Label label_SEG_DOT_MS_2;
         private System.Windows.Forms.Label label_SEG_DOT_MS_1;
+        private System.Windows.Forms.Timer timer_Update;
     }
 }
 
